@@ -5,3 +5,6 @@
 //  Created by Serhan Khan on 13/03/2025.
 //
 
+struct MainApiConfiguration: PostsJsonPlaceHolderApiConfiguration {
+    
+}
