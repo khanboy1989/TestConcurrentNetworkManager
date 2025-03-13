@@ -1,0 +1,24 @@
+{
+  "originHash" : "9791f0b3c608092545db3494a1f5910e15139cf6a68859e7a5d8d52d53fe5ccc",
+  "pins" : [
+    {
+      "identity" : "concurrentnetworklayer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/khanboy1989/ConcurrentNetworkLayer",
+      "state" : {
+        "revision" : "3dd34e1a6bebde4b422eb8d7a2a692f8e872fbb3",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "swiftlintplugins",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "state" : {
+        "revision" : "7a3d77f3dd9f91d5cea138e52c20cfceabf352de",
+        "version" : "0.58.2"
+      }
+    }
+  ],
+  "version" : 3
+}
