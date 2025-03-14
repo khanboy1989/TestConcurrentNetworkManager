@@ -1,15 +1,6 @@
 {
-  "originHash" : "9791f0b3c608092545db3494a1f5910e15139cf6a68859e7a5d8d52d53fe5ccc",
+  "originHash" : "d4829fbc8b81ddfb5e4c64d643804958d9fa54a23393b4ac8e97665de6807822",
   "pins" : [
-    {
-      "identity" : "concurrentnetworklayer",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/khanboy1989/ConcurrentNetworkLayer",
-      "state" : {
-        "revision" : "3dd34e1a6bebde4b422eb8d7a2a692f8e872fbb3",
-        "version" : "1.0.3"
-      }
-    },
     {
       "identity" : "swiftlintplugins",
       "kind" : "remoteSourceControl",

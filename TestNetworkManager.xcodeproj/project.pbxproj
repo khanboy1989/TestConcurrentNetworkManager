@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBE402962D830D7800C384EC /* ConcurrentNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = EBE402952D830D7800C384EC /* ConcurrentNetworkManager */; };
+		EB42E0922D841A3200BA8DEE /* ConcurrentNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE402962D830D7800C384EC /* ConcurrentNetworkManager in Frameworks */,
+				EB42E0922D841A3200BA8DEE /* ConcurrentNetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = TestNetworkManager;
 			packageProductDependencies = (
-				EBE402952D830D7800C384EC /* ConcurrentNetworkManager */,
+				EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */,
 			);
 			productName = TestNetworkManager;
 			productReference = EBE402672D830D3A00C384EC /* TestNetworkManager.app */;
@@ -202,7 +202,7 @@
 			mainGroup = EBE4025E2D830D3A00C384EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EBE402942D830D7800C384EC /* XCRemoteSwiftPackageReference "ConcurrentNetworkLayer" */,
+				EB42E0902D841A3200BA8DEE /* XCLocalSwiftPackageReference "../ConcurrentNetworkManager" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EBE402682D830D3A00C384EC /* Products */;
@@ -405,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestNetworkManager/Preview Content\"";
+				DEVELOPMENT_TEAM = D3EBGHD7R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestNetworkManager/Preview Content\"";
+				DEVELOPMENT_TEAM = D3EBGHD7R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -562,21 +564,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		EBE402942D830D7800C384EC /* XCRemoteSwiftPackageReference "ConcurrentNetworkLayer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/khanboy1989/ConcurrentNetworkLayer";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		EB42E0902D841A3200BA8DEE /* XCLocalSwiftPackageReference "../ConcurrentNetworkManager" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ConcurrentNetworkManager;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EBE402952D830D7800C384EC /* ConcurrentNetworkManager */ = {
+		EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EBE402942D830D7800C384EC /* XCRemoteSwiftPackageReference "ConcurrentNetworkLayer" */;
 			productName = ConcurrentNetworkManager;
 		};
 /* End XCSwiftPackageProductDependency section */
