@@ -20,7 +20,7 @@ final class PostsRepositoryImpl: PostsRepositoryProtocol {
     private let apiClient: any IApiClient
     private typealias apiEndpoint = PostEndpointTarget
     
-    init(apiClient: any IApiClient = ApiClientImpl()) {
+    init(apiClient: any IApiClient = ApiClientImpl(appName: "TestNetworkManager")) {
         self.apiClient = apiClient
     }
     

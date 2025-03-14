@@ -73,7 +73,7 @@ struct ContentView: View {
             do {
                 posts = try await self.postsRepository.getPosts()
             } catch {
-                print("Error = \(error.localizedDescription)")
+                print("Error = \(error)")
             }
         }
     }
