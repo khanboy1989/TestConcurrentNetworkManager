@@ -8,50 +8,6 @@
 import SwiftUI
 import ConcurrentNetworkManager
 
-enum PostEndpointTarget {
-    case posts
-}
-
-extension PostEndpointTarget: EndpointTargetType {
-    var method: HTTPMethod {
-        switch self {
-        case .posts:
-            return .get
-        }
-    }
-    
-    var path: String {
-        switch self {
-        case .posts:
-            return "/posts"
-        }
-    }
-    
-    var baseURL: String {
-        return "https://jsonplaceholder.typicode.com"
-    }
-    
-    var headers: [String : String] {
-        return [:]
-    }
-    
-    var urlParameters: [String : any CustomStringConvertible] {
-        return [:]
-    }
-    
-    var body: Data? {
-        switch self {
-        case .posts:
-            return nil
-        }
-    }
-    
-    var apiVersion: String {
-        "/api/v1"
-    }
-}
-
-
 struct ContentView: View {
     private let postsRepository: any PostsRepositoryProtocol
     @State private var posts: [PostDTO] = []
@@ -64,7 +20,10 @@ struct ContentView: View {
         VStack {
             List {
                 ForEach(posts, id: \.id) { post in
-                    Text("\(post.title)")
+                    VStack(alignment: .leading) {
+                        Text("User ID: \(post.userId)")
+                        Text("Title: \(post.title)")
+                    }
                 }
             }
         }

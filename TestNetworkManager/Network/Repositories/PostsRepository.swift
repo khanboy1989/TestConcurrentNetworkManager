@@ -20,11 +20,17 @@ final class PostsRepositoryImpl: PostsRepositoryProtocol {
     private let apiClient: any IApiClient
     private typealias apiEndpoint = PostEndpointTarget
     
-    init(apiClient: any IApiClient = ApiClientImpl(appName: "TestNetworkManager")) {
+    init(apiClient: any IApiClient = ApiClientImpl(appName: Bundle.appName)) {
         self.apiClient = apiClient
     }
     
     func getPosts() async throws -> [PostDTO] {
         return try await apiClient.request(apiEndpoint.posts)
+    }
+}
+
+extension Bundle {
+    static var appName: String?  {
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String
     }
 }

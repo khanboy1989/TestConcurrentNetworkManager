@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5488228D2D848C52008C68DC /* ConcurrentNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 5488228C2D848C52008C68DC /* ConcurrentNetworkManager */; };
 		EB42E0922D841A3200BA8DEE /* ConcurrentNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5488228D2D848C52008C68DC /* ConcurrentNetworkManager in Frameworks */,
 				EB42E0922D841A3200BA8DEE /* ConcurrentNetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +120,7 @@
 			name = TestNetworkManager;
 			packageProductDependencies = (
 				EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */,
+				5488228C2D848C52008C68DC /* ConcurrentNetworkManager */,
 			);
 			productName = TestNetworkManager;
 			productReference = EBE402672D830D3A00C384EC /* TestNetworkManager.app */;
@@ -202,7 +205,7 @@
 			mainGroup = EBE4025E2D830D3A00C384EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EB42E0902D841A3200BA8DEE /* XCLocalSwiftPackageReference "../ConcurrentNetworkManager" */,
+				5488228B2D848C52008C68DC /* XCLocalSwiftPackageReference "../ConcurrentNetworkLayer" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EBE402682D830D3A00C384EC /* Products */;
@@ -565,13 +568,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		EB42E0902D841A3200BA8DEE /* XCLocalSwiftPackageReference "../ConcurrentNetworkManager" */ = {
+		5488228B2D848C52008C68DC /* XCLocalSwiftPackageReference "../ConcurrentNetworkLayer" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ConcurrentNetworkManager;
+			relativePath = ../ConcurrentNetworkLayer;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5488228C2D848C52008C68DC /* ConcurrentNetworkManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ConcurrentNetworkManager;
+		};
 		EB42E0912D841A3200BA8DEE /* ConcurrentNetworkManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ConcurrentNetworkManager;

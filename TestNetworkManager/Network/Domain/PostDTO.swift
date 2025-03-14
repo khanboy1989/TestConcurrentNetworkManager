@@ -11,10 +11,9 @@ struct PostDTO: Codable {
     let userId: Int
     let title: String
     let body: String
-    
-//    enum CodingKeys: String, CodingKey {
-//        case userId = "userId"
-//        case title
-//        case body
-//    }
+    enum CodingKeys: String, CodingKey {
+        case userId = "userId"
+        case title
+        case body
+    }
 }

@@ -12,7 +12,21 @@ struct MainApiConfiguration: JsonPlaceHolderApiConfiguration {
     }()
     
     let proxyPath: String = {
-        return ""
+        return "/api"
+    }()
+    
+    let apiKey: String = {
+       return ""
+    }()
+}
+
+struct MainApiDevConfiguration: JsonPlaceHolderApiConfiguration {
+    let baseUrl: String = {
+       return "https://jsonplaceholder.typicode.com"
+    }()
+    
+    let proxyPath: String = {
+        return "/api"
     }()
     
     let apiKey: String = {
